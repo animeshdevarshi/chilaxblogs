@@ -1,6 +1,10 @@
 # build output
 dist/
 .dist-nest-*/
+
+# wrangler / cloudflare
+.wrangler/
+.dev.vars
 # generated types
 .astro/
 

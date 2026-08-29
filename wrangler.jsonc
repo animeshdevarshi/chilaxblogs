@@ -1,0 +1,11 @@
+{
+	// Static-assets-only Worker: no `main` entry, Cloudflare just serves the
+	// built files. `npm run build` outputs everything under dist/blog/ (see
+	// scripts/nest-under-base.mjs) so the site is served at /blog/*.
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "chilaxblogs",
+	"compatibility_date": "2025-01-01",
+	"assets": {
+		"directory": "./dist"
+	}
+}
