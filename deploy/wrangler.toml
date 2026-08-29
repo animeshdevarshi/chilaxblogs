@@ -1,0 +1,16 @@
+name = "cognoweave-router"
+main = "worker-router.js"
+compatibility_date = "2024-11-01"
+
+routes = [
+  { pattern = "cognoweavesolution.com/*", zone_name = "cognoweavesolution.com" }
+]
+
+# Fill in the Pages project names after they are created.
+[[services]]
+binding = "BLOG"
+service = "chilaxblogs"          # blog Pages project
+
+[[services]]
+binding = "SITE"
+service = "cognoweave-site"      # main site Pages project

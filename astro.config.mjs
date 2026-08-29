@@ -6,7 +6,15 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	// Replace this with your actual domain
+	site: 'https://cognoweavesolution.com',
+
+	// The simplified subfolder path
+	base: '/blog',
+
+	// Required to prevent redirect loops on Cloudflare Pages
+	trailingSlash: 'always',
+
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
