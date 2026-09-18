@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node ./scripts/nest-under-base.mjs",
+    "build": "astro build && node ./scripts/nest-under-base.mjs && node ./scripts/copy-root-site.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
